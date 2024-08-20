@@ -1,0 +1,310 @@
+/* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General body styling */
+body {
+    overflow-x: hidden;
+    background-color: #141B11;
+}
+
+/* Header styling */
+.header {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover {
+    color: #0ef;
+}
+
+/* Home section styling */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #141B11;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile img {
+    max-width: 800px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border-color: #0ef;
+}
+.profile img:hover {
+    box-shadow: 0 0 5px rgb(162, 183, 183), 0 0 25px rgb(131, 221, 221), 0 0 100px cyan, 0 0 200px rgb(208, 221, 221);
+}
+.profile-text {
+    max-width: 600px;
+    margin-left: 100px;
+}
+.home-content h5 {
+    color: #e5e5e5;
+    font-size: 25px;
+}
+.home-content h5 span {
+    color: #0ef;
+    font-size: 30px;
+}
+.home-content h1 {
+    color: rgb(17, 194, 207);
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.home-content p {
+    color: #e5e5e5;
+    font-size: 20px;
+}
+.home-sci a {
+    margin-right: 10px;
+}
+.btn-group {
+    margin: 45px 0;
+}
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    transition: .5s ease;
+}
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+.home-content .home-sci i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+}
+.home-content .home-sci i:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+    transform: rotate(360deg);
+}
+
+/* About section styling */
+#about {
+    position: relative;
+    padding: 50px 10%;
+}
+.about-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+}
+.containerr {
+    flex: 1;
+    background: white;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+.about-text p {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-text a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    transition: .5s ease;
+}
+.about-text a:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+/* Experience section styling */
+#experience {
+    padding: 50px 10%;
+}
+.experience-details-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items t
+    o wrap on smaller screens */
+    margin: 0 -15px;
+}
+
+
+.details-container {
+    flex: 1; /* Allows containers to grow and fill available space */
+    background-color: rgb(53, 233, 236); /* Background color for contrast */
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px; /* Space around each container */
+    box-shadow: 0 4px 8px rgba(134, 174, 185, 0.1); /* Example shadow for a subtle effect */
+ }
+ 
+.technical-skills {
+    display: flex;
+   text-align: initial;
+   flex-wrap: wrap;
+   flex-direction: row;
+   gap: 2.5rem;
+   justify-content: space-around;
+}
+
+.technical-skills {
+    color:#141714;
+    display: flex;
+    align-items: center;
+   
+}
+.icon {
+    
+    height: 1.5rem; /* Adjust size here */
+    width: 1.5rem;  /* Adjust size here */
+    margin-right: 10px;
+}
+
+/* Responsive styles */
+@media(max-width: 930px) {
+    .navbar {
+        display: none; /* Hide navbar */
+    }
+    .new {
+        display: initial;
+    }
+    .click {
+        top: 20px;
+    }
+    .click span {
+        position: absolute;
+        margin-top: 5px;
+    }
+    .click span:nth-child(2) {
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child(2) {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .nav {
+        position: absolute;
+        top: 10px;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: #f3e6e6;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(108, 100, 100, 0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .nav li {
+        display: block;
+    }
+    nav .nav li a {
+        display: block;
+        margin-bottom: 5;
+        text-align: center;
+    }
+}
+.section-p1 span {
+    font-size: 50px;
+    color: #0ef
+}
+.section-p1 {
+    font-size:30px ;
+    color:#FFF ;
+}
+.section-p1 {
+   font-size: 30px;
+}
+.sub-title {
+    font-size: 50px;
+    color: #0ef;
+    margin-bottom: 5rem;
+}
+
+
+@media(max-width: 760px) {
+    .container {
+        flex-direction: column;
+        padding-top: 0rem;
+    }
+    .home-content {
+        padding: 40px 0;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .about-container {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
